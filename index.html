@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function setName() {
+            const nameField = document.getElementById("username");
+            const name = nameField.value
+            const title = document.getElementById("link-profile");
+            title.innerText = name + " Profile";
+        }
+        function setImage() {
+            const profileImage = document.getElementById("profile")
+            const changeprofile = document.getElementById("ProfileImage")
+            const URL = changeprofile.value
+            profileImage.style.backgroundImage = "url(" + URL + ")"
+
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div class="parent" id="profile">
+            <div class ="child"></div>
+        </div>
+        <a id="link-profile" href="https://github.com/66070295pochara/web"target=""_blank>Pochare Sappasate</a>
+        <div class="row">
+            <p>set the username</p>
+            <input id="username" type="text">
+            <button onclick="setName()">Set</button><br>
+        </div>
+        <div class="row2">
+            <p>set the profile image URL</p>
+            <input id="ProfileImage" type="text">
+            <button onclick="setImage()">Set</button>
+        </div>
+        <div class="gallery">
+            <div class = "image"></div>
+            <div id="extend-col" class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+    </main>
+</body>
+</html>
